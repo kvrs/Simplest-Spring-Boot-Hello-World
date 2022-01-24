@@ -6,9 +6,9 @@ pipeline {
                 git 'https://github.com/kvrs/Simplest-Spring-Boot-Hello-World.git'
             }
         }
-        stage('maven build') { 
+        stage('maven test') { 
             steps {
-               sh 'mvn package'
+               sh 'mvn test'
             }
         }
         stage('create Dockerimage') { 
