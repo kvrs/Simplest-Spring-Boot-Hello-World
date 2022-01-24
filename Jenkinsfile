@@ -6,7 +6,7 @@ pipeline {
                 git 'https://github.com/kvrs/Simplest-Spring-Boot-Hello-World.git'
             }
         }
-        stage('Maven build') { 
+        stage('maven build') { 
             steps {
                sh 'mvn package'
             }
